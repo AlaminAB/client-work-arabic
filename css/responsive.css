@@ -32,6 +32,7 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
+
    ul.navbar-nav .nav-item {
     margin-right: 2px !important;
 }
@@ -113,6 +114,26 @@ ul.navbar-nav .nav-item .nav-link {
 
 /* Extra small devices (portrait phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .applied-filters {
+        order: 3;
+        width: 100%;
+    }
+    .sidebar-wrapper {
+        top: 48px;
+    }
+    .wid-btns .btn {
+        padding: 5px 8px;
+    }
+    .s-result-tilte h4 {
+        font-size: 22px;
+    }
+    
+    .btn.show-sidebar {
+        padding: 1px 10px;
+    }
+    .singnle-ap-filter {
+        margin-bottom: 5px;
+    }
   hr.accent-2.mb-4.mt-0.d-inline-block.mx-auto {
     margin-bottom: 10px !important;
 }
@@ -212,7 +233,7 @@ ul.navbar-nav .nav-item .nav-link {
     position: absolute;
     width: 100%;
     top: 58px;
-    background: #ee3131;
+    background: #e62e37;
     margin-left: 0;
     padding-left: 32px;
     padding-right: 0;

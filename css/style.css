@@ -726,11 +726,9 @@ hr.accent-2.mb-4.mt-0.d-inline-block.mx-auto {
 
 .singnle-ap-filter {
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: flex-start;
-    -ms-flex-align: start;
-        align-items: flex-start;
+    align-items: flex-start;
     margin-right: 5px;
     padding-top: 5px;
     white-space: nowrap;
@@ -832,7 +830,6 @@ table.table td {
 .white-s-nowrap{
     white-space: nowrap;
 }
-
 /* redwan css  */
 /* Banner Section */
 
@@ -1572,3 +1569,9 @@ form.contact-form-wrapper .form-group button:hover {
 }
 
 /* Terms and condition end */
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #e62e37;
+    background-color: #e62e37;
+}

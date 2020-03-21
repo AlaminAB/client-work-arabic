@@ -1681,7 +1681,7 @@ ul.stepper li.warning a .circle {
 }
 
 a {
-    color: #007bff;
+    color: #e62e37;
     text-decoration: none;
     cursor: pointer;
     -webkit-transition: all 0.2s ease-in-out;
@@ -1689,7 +1689,7 @@ a {
 }
 
 a:hover {
-    color: #0056b3;
+    color: #e62e37;
     text-decoration: none;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out
@@ -9938,7 +9938,7 @@ table.table a.btn.btn-black {
 
 .pagination .page-item.active .page-link {
     color: #fff;
-    background-color: #4285f4;
+    background-color: #e62e37;
     border-radius: .125rem;
     -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -9947,7 +9947,7 @@ table.table a.btn.btn-black {
 }
 
 .pagination .page-item.active .page-link:hover {
-    background-color: #4285f4
+    background-color: #e62e37
 }
 
 .pagination .page-item.disabled .page-link {
