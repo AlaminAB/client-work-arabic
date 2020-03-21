@@ -548,7 +548,8 @@ hr.accent-2.mb-4.mt-0.d-inline-block.mx-auto {
 
 
 
-/* auction page  */
+/* rasel css  */
+
 .sidebar-title .btn, .btn.show-sidebar {
     font-size: 20px;
     padding: 2px 12px;
@@ -654,13 +655,59 @@ hr.accent-2.mb-4.mt-0.d-inline-block.mx-auto {
     line-height: 19px;
     padding: 2px 3px;
 }
-
-#dtBasicExample th{
+#dtBasicExample th {
     white-space: nowrap;
+    width: auto !important;
 }
-.btn-primary {
-    background: #e62e37 !important;
+
+.width-20{
+    width: 20px !important;
 }
+
+.width-100{
+    width: 100px !important;
+}
+
+.def-sel-inp{
+    width: 15px;
+    height: 15px;
+}
+
+.table-car-img img {
+    width: 100%;
+}
+
+.table-car-img {
+    position: relative;
+}
+
+.table-car-img a {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff !important;
+    display: block;
+    background: #9b9b9b94;
+    width: 100%;
+    text-align: center;
+}
+
+.lh-1{
+    line-height: 1;
+}
+
+.lh-1-5{
+    line-height: 1.5;
+}
+
+table.table td {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 13px;
+}
+
 
 
 

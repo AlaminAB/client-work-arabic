@@ -2,10 +2,11 @@
 $(document).ready(function () {
 
       $('#dtBasicExample').DataTable({
-        // columnDefs: [{
-        //     orderable: false,
-        //     targets: 0
-        //     }]
+        "aaSorting": [],
+        columnDefs: [{
+            targets: 0,
+            orderable: false,
+            }]
       });
       $('.dataTables_length').addClass('bs-select');
 
@@ -32,9 +33,21 @@ $(document).ready(function () {
           $(this).hide();
       })
 
+      let clps = false;
       $('.clps-all').click(function(){
-        $('.open-sf-body').removeClass('active');
-        $('.s-filter-body').slideUp();
+          if (clps){
+            $('.open-sf-body').removeClass('active');
+            $('.s-filter-body').slideUp();
+            $(this).text('Expand All')
+            clps = false;
+          }
+          else{
+            $('.open-sf-body').addClass('active');
+            $('.s-filter-body').slideDown();
+            $(this).text('Collapse All')
+            clps = true;
+          }
+        
       })
 
       $('.cls-tag').click(function(){
