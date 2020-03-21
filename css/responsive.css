@@ -93,10 +93,47 @@ ul.navbar-nav .nav-item .nav-link {
     padding-left: 40px;
     margin-left: 0;
   }
+
+
+  .car-shipping-overly h3 {
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+.car-shipping-overly p {
+    font-size: 15px;
+    line-height: 20px;
+}
+.car-shipping-left h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 35px;
+}
+
 }
 
 /* Extra small devices (portrait phones, less than 768px) */
-@media (max-width: 767.98px) { 
+@media (max-width: 767.98px) {
+  hr.accent-2.mb-4.mt-0.d-inline-block.mx-auto {
+    margin-bottom: 10px !important;
+}
+  .car-shipping-right.z-depth-1-half {
+    margin-top: 20px;
+  }
+  section.car-shipping.pb-4 {
+    padding-top: 0px;
+}
+  section.buy-now-section {
+    padding: 41px 0px;
+}
+  h6.text-uppercase.font-weight-bold {
+    font-size: 15px;
+}
+.apps-link {
+    padding-top: 15px;
+} 
+  .apps-link ul li a img {
+    margin-top: 0px;
+}
   /* Topbar */
   .ts-logo img {
     max-width: 162px;
@@ -367,7 +404,9 @@ ul.navbar-nav .nav-item .nav-link {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) { 
-
+.car-shipping-left h2 {
+    font-size: 27px;
+  }
 
 }
 
@@ -394,4 +433,56 @@ ul.navbar-nav .nav-item .nav-link {
   .search-box {
     max-width: 100%;
 }
+.search-box .top-search-btn {
+    font-size: 12px;
+    padding: 4px 6px;
+    }
+    .search-box input {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+  .ts-logo-area {
+    padding: 10px 0;
+}
+.carousel-item img.d-block.w-100 {
+    height: 200px;
+}
+.slider-arrow-icon {
+    font-size: 30px;
+}
+h2.section-title:after {
+    width: 30%;
+    }
+    .buy-view-button .btn2:after {
+    width: 1000%;
+  }
+  .car-shipping-left h2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+.car-shipping-overly h3 {
+    font-size: 25px;
+    padding-bottom: 5px;
+  }
+  .car-shipping-overly p {
+    font-size: 15px;
+    color: #fff;
+    line-height: 21px;
+}
+.row.mt-3.sm-p-0.py-5 {
+    padding: 0 !important;
+    padding-bottom: 10px !important;
+}
+footer.page-footer.footer-color {
+    padding-top: 1px;
+}
+.banner-content p {
+    font-size: 16px;
+    line-height: 24px;
+    }
+    nav.breadcrumb-wrap {
+    position: absolute;
+    bottom: -60px;
+  }
 	}

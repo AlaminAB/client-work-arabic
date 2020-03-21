@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 p {
     margin-top: 0;
     margin-bottom: 10px;
@@ -45,8 +47,10 @@ p {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: scale(0);
-  transform: scale(0);
+  -ms-transform: scale(0);
+      transform: scale(0);
   -webkit-transition: all ease .5s;
+  -o-transition: all ease .5s;
   transition: all ease .5s;
 }
 .navbar .nav-item .nav-link.active {
@@ -56,13 +60,15 @@ p {
   opacity: 1;
   visibility: visible;
   -webkit-transform: scale(1);
-  transform: scale(1);
+  -ms-transform: scale(1);
+      transform: scale(1);
 }
 .navbar .nav-item .nav-link:hover:after {
   opacity: 1;
   visibility: visible;
   -webkit-transform: scale(1);
-  transform: scale(1);
+  -ms-transform: scale(1);
+      transform: scale(1);
 }
 
 .navbar-nav .nav-item .dropdown-menu {
@@ -72,6 +78,7 @@ p {
   border-color: transparent;
   padding: 0;
   -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
   left: 0;
   min-width: 220px;
@@ -88,6 +95,7 @@ p {
   display: block;
   padding: 13px 23px;
   -webkit-transition: all ease 500ms;
+  -o-transition: all ease 500ms;
   transition: all ease 500ms;
   font-family: "Dosis", sans-serif;
 }
@@ -174,21 +182,14 @@ p {
 
 .top-bar-event {
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 100%;
-  -moz-box-flex: 0;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-align: center;
-  -webkit-align-items: center;
-  -moz-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
@@ -408,7 +409,9 @@ a.ts-logo img {
     outline: none;
     border: 3px solid #eb1b21;
     border-radius: 12px;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     background: #54565f;
     color: #fff;
     border-top: 1px solid #eb1b21;
@@ -432,9 +435,22 @@ h2.section-title {
     text-align: center;
     font-size: 30px;
     font-weight: 500;
-    padding-bottom: 55px;
+       padding-bottom: 40px;
+       position: relative;
 }
-
+h2.section-title:after {
+    position: absolute;
+    content: "";
+    width: 10%;
+    height: 2px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background: red;
+    left: 50%;
+    top: 42px;
+    border-radius: 50%;
+}
 h2.section-title span {
     color: #e62e37;
 }
@@ -449,8 +465,12 @@ section.buy-now-section {
 }
 
 .buy-view-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
        
 }
 
@@ -472,14 +492,14 @@ section.buy-now-section {
 .slider-card.buy-cars-slider img {
     width: 100%;
     -webkit-transition: all .55s ease-out;
-       -moz-transition: all .55s ease-out;
-        -ms-transition: all .55s ease-out;
          -o-transition: all .55s ease-out;
             transition: all .55s ease-out;
 }
 
 .slider-card.buy-cars-slider img:hover {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
 }
 .buy-car-img {
     overflow: hidden;
@@ -502,7 +522,9 @@ section.buy-now-section {
     background: #e62e37;
     top: 0;
     z-index: -1;
-    transform: skewX(-48deg);
+    -webkit-transform: skewX(-48deg);
+        -ms-transform: skewX(-48deg);
+            transform: skewX(-48deg);
 }
 
 .buy-view-button .btn2 {
@@ -519,7 +541,9 @@ section.buy-now-section {
     top: 0;
     right: -15px;
     z-index: -1;
-    transform: skewX(4deg);
+    -webkit-transform: skewX(4deg);
+        -ms-transform: skewX(4deg);
+            transform: skewX(4deg);
 }
 /* buy car section end */
 
@@ -531,6 +555,8 @@ section.buy-now-section {
 }
 .car-shipping-right.z-depth-1-half {
     position: relative;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .car-shipping-overly {
@@ -538,7 +564,9 @@ section.buy-now-section {
     width: 60%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     text-align: center;
     z-index: 999;
 }
@@ -698,9 +726,11 @@ hr.accent-2.mb-4.mt-0.d-inline-block.mx-auto {
 
 .singnle-ap-filter {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: flex-start;
-    align-items: flex-start;
+    -ms-flex-align: start;
+        align-items: flex-start;
     margin-right: 5px;
     padding-top: 5px;
     white-space: nowrap;
@@ -887,7 +917,9 @@ ol.breadcrumb {
   margin-bottom: 0;
   text-align: center;
   background-color: #F52426;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 20px 0;
   width: 80%;
   margin: 0 auto;
@@ -985,7 +1017,8 @@ section.about-us-cotent-wrap {
 
 .about-us-box {
   background-color: #fff;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   padding: 60px 40px;
   margin-top: 40px;
 }
@@ -1282,8 +1315,12 @@ form.filter-search-form input[type='text'] {
 
 .single-vehicle-checkbox {
   margin-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* Checkbox CSS  */
@@ -1294,7 +1331,8 @@ form.filter-search-form input[type='text'] {
   height: 18px;
   width: 18px;
   margin-right: 10px;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   -webkit-appearance: none;
   cursor: pointer;
   position: relative;
@@ -1356,7 +1394,7 @@ section.contact-sec-wrapper {
 }
 
 .contact-info-wrap {
-  background-color: #010101;
+  background-color: #54565f;
   padding: 30px 37px;
   position: relative;
   z-index: 2;
@@ -1485,7 +1523,8 @@ form.contact-form-wrapper .form-group button:hover {
 .terms-and-conditon-area {
   background-color: #fff;
   padding: 30px 20px;
-  box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.1);
 }
 
 .terms-and-condition-wrap {
