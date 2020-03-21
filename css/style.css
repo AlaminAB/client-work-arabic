@@ -738,6 +738,7 @@ section.banner-sec-wrap::before {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 70%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -862,8 +863,10 @@ section.about-us-cotent-wrap {
   position: relative;
 }
 
-.about-us-img button {
+.about-us-img .video-popup {
   position: absolute;
+  display: inline-block;
+  text-align: center;
   left: 50%;
   top: 50%;
   background-color: #FC2C27;
@@ -872,8 +875,8 @@ section.about-us-cotent-wrap {
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  line-height: 43px;
-  padding-left: 10px;
+  line-height: 52px;
+  padding-left: 5px;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -883,11 +886,48 @@ section.about-us-cotent-wrap {
 
 .about-us-img img {
   width: 100%;
-      border-radius: 5px;
 }
 
 .about-us-img {
   margin-top: 70px;
+}
+
+.about-us-box {
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 60px 40px;
+  margin-top: 40px;
+}
+
+.about-us-box h4 {
+  font-size: 24px;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+}
+
+.about-us-box h4::before,
+.about-us-box h4::after {
+  content: '';
+  position: absolute;
+  background-color: #FC2C27;
+  left: 50%;
+  bottom: 0;
+  width: 60px;
+  height: 2px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.about-us-box p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 0;
 }
 
 /* About us end */
@@ -1225,7 +1265,7 @@ section.contact-sec-wrapper {
 }
 
 .contact-info-wrap {
-  background-color: #54565f;
+  background-color: #010101;
   padding: 30px 37px;
   position: relative;
   z-index: 2;
@@ -1348,129 +1388,57 @@ form.contact-form-wrapper .form-group button:hover {
 /* Contact Us end */
 
 
-
-/* ***Responsive media query*** */
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) and (max-width:1500px) {
+/* Terms and condition */
 
 
+.terms-and-conditon-area {
+  background-color: #fff;
+  padding: 30px 20px;
+  box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.1);
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .accordion {
-    margin-bottom: 40px;
-  }
-
-  .vehicles-top-bar-wrap {
-    padding: 60px 0;
-    padding-bottom: 20px;
-  }
-
-  .banner-content {
-    width: 100%;
-  }
-
-  .about-us-img {
-    margin-bottom: 40px;
-    margin-top: 0;
-  }
-
-
+.terms-and-condition-wrap {
+  background-color: #F2F2F2;
+  padding: 100px 0;
 }
 
-/* Extra small devices (portrait phones, less than 768px) */
-@media (max-width: 767.98px) {
-
-  .banner-content {
-    width: 100%;
-    padding: 0 15px;
-    padding-bottom: 50px;
-  }
-
-  section.banner-sec-wrap {
-    height: 340px;
-  }
-
-  .banner-content h2 {
-    font-size: 32px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-  }
-
-  .banner-content p {
-    font-size: 17px;
-    line-height: 29px;
-    margin-bottom: 0;
-    color: #fff;
-    font-weight: 400;
-  }
-
-  ol.breadcrumb {
-    padding: 15px 0;
-    width: 90%;
-  }
-
-  .vehicles-filter-area {
-    margin-bottom: 40px;
-  }
-
-  .vehicles-top-bar-wrap {
-    padding: 40px 0;
-    background-color: #F8F9FA;
-    padding-bottom: 30px;
-  }
-
-
-  .vehicles-card-img {
-    width: 100%;
-    position: relative;
-  }
-
-  .vehicle-card-content {
-    padding: 20px 15px;
-    padding-right: 15px;
-    width: 100%;
-  }
-
-  .vehicle-card-list.w-25 {
-    width: 35% !important;
-  }
-  .vehicle-card-list.w-75 {
-    padding-left: 30px !important;
-    width: 65% !important;
-  }
-
-  .vehicle-card-bottom a {
-    font-size: 12px;
-    height: 35px;
-    line-height: 35px;
-    width: 100px;
-  }
-  .about-us-img {
-    margin-bottom: 40px;
-    margin-top: 0;
-  }
-
-  section.about-us-cotent-wrap {
-    padding: 60px 0;
-    padding-bottom: 30px;
-  }
-
-  .about-us-cotent h2 {
-    font-size: 38px;
-  }
-
-  .about-us-cotent h6 {
-    font-size: 19px;
-  }
-
-
+.terms-title h6 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {}
+.terms-box h6 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.terms-seciton-title h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1a1e1e;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.terms-seciton-title h2::before {
+  content: '';
+  position: absolute;
+  background-color: #FC2C27;
+  height: 4px;
+  width: 150px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -75px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* Terms and condition end */

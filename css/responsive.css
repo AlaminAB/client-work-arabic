@@ -22,6 +22,58 @@ ul.navbar-nav .nav-item .nav-link {
 .header-angle:before {
     border-top: 57px solid transparent;
 }
+/* redwan css */
+ .accordion {
+    margin-bottom: 40px;
+  }
+
+  .vehicles-top-bar-wrap {
+    padding: 60px 0;
+    padding-bottom: 20px;
+  }
+
+  .banner-content {
+    width: 100%;
+  }
+
+  .about-us-img {
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+
+  section.contact-sec-wrapper {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+
+  .single-contact span,
+  .contact-form-title h2,
+  .contact-info-title h2,
+  .contact-info-title p,
+  .single-contact p {
+    color:#1e1a1a;
+  }
+
+  .contact-info-wrap {
+    background-color: #fff;
+    padding: 30px 40px;
+    margin-left: 0;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+  form.contact-form-wrapper {
+    padding: 30px 60px;
+    position: relative;
+    margin-top: 0;
+    padding-left: 40px;
+    margin-left: 0;
+  }
 }
 
 /* Extra small devices (portrait phones, less than 768px) */
@@ -158,6 +210,138 @@ ul.navbar-nav .nav-item .nav-link {
   .top-bar-event.ts-top {
     text-align: center;
   } 
+
+/* redwan css  */
+ .banner-content {
+    width: 100%;
+    padding: 0 15px;
+    padding-bottom: 50px;
+  }
+
+  section.banner-sec-wrap {
+    height: 340px;
+  }
+
+  .banner-content h2 {
+    font-size: 26px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+
+  .banner-content p {
+    font-size: 17px;
+    line-height: 29px;
+    margin-bottom: 0;
+    color: #fff;
+    font-weight: 400;
+  }
+
+  ol.breadcrumb {
+    padding: 15px 0;
+    width: 90%;
+  }
+
+  .vehicles-filter-area {
+    margin-bottom: 40px;
+  }
+
+  .vehicles-top-bar-wrap {
+    padding: 40px 0;
+    background-color: #F8F9FA;
+    padding-bottom: 30px;
+  }
+
+
+  .vehicles-card-img {
+    width: 100%;
+    position: relative;
+  }
+
+  .vehicle-card-content {
+    padding: 20px 15px;
+    padding-right: 15px;
+    width: 100%;
+  }
+
+  .vehicle-card-list.w-25 {
+    width: 35% !important;
+  }
+  .vehicle-card-list.w-75 {
+    padding-left: 30px !important;
+    width: 65% !important;
+  }
+
+  .vehicle-card-bottom a {
+    font-size: 12px;
+    height: 35px;
+    line-height: 35px;
+    width: 100px;
+  }
+  .about-us-img {
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+
+  section.about-us-cotent-wrap {
+    padding: 60px 0;
+    padding-bottom: 30px;
+  }
+
+  .about-us-cotent h2 {
+    font-size: 38px;
+  }
+
+  .about-us-cotent h6 {
+    font-size: 19px;
+  }
+
+  section.contact-sec-wrapper {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
+
+  .single-contact span,
+  .contact-form-title h2,
+  .contact-info-title h2,
+  .contact-info-title p,
+  .single-contact p {
+    color: #1e1a1a;
+  }
+
+  .contact-info-wrap {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-left: 0;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+
+
+  form.contact-form-wrapper {
+    padding: 30px 20px;
+    position: relative;
+    margin-top: 0;
+    padding-left: 20px;
+    margin-left: 0;
+  }
+
+  .terms-and-condition-wrap {
+    padding: 60px 0;
+  }
+
+  .terms-seciton-title h2 {
+    font-size: 24px;
+  }
+
+  .terms-seciton-title h2::before {
+    width: 120px;
+    margin-left: -60px;
+  }
 
 
 }
