@@ -444,17 +444,30 @@ section.buy-now-section {
 }
 .slider-card.buy-cars-slider .card-title {
     font-size: 20px;
+    padding-top: 15px;
+    font-weight: 500;
 }
 
 .buy-view-button {
     display: flex;
     justify-content: space-between;
+       
 }
 
 .buy-view-button a {
-    border: 1px solid #e62e37;
-    padding: 8px 5px;
-    font-size: 14px;
+       font-size: 14px;
+    padding: 8px 10px;
+    color: #fff;
+    outline: none;
+}
+.buy-view-button a:focus{
+  outline: none;
+}
+.buy-view-button span {
+       font-size: 14px;
+    padding: 8px 10px;
+    color: #fff;
+    display: inline-block;
 }
 .slider-card.buy-cars-slider img {
     width: 100%;
@@ -472,7 +485,41 @@ section.buy-now-section {
     overflow: hidden;
 }
 .slider-card.buy-cars-slider .card-body {
-    padding: 20px 15px;
+    padding: 0;
+    overflow: hidden;
+}
+.buy-view-button .btn1 {
+    position: relative;
+    z-index: 99999;
+}
+
+.buy-view-button .btn1:after {
+    position: absolute;
+    left: -23px;
+    content: "";
+    width: 155%;
+    height: 100%;
+    background: #e62e37;
+    top: 0;
+    z-index: -1;
+    transform: skewX(-48deg);
+}
+
+.buy-view-button .btn2 {
+    position: relative;
+    z-index: 9999;
+}
+
+.buy-view-button .btn2:after {
+    position: absolute;
+    content: "";
+    width: 200%;
+    height: 100%;
+    background: #54565f;
+    top: 0;
+    right: -15px;
+    z-index: -1;
+    transform: skewX(4deg);
 }
 /* buy car section end */
 
