@@ -498,14 +498,15 @@ section.buy-now-section {
 
 .car-shipping-overly h3 {
     color: #fff;
-    font-size: 30px;
+    font-size: 40px;
     padding-bottom: 18px;
     font-weight: 400;
 }
 
 .car-shipping-overly p {
-    font-size: 15px;
+    font-size: 20px;
     color: #fff;
+    line-height: 26px;
 }
 
 .car-shipping-right.z-depth-1-half:after {
@@ -513,7 +514,7 @@ section.buy-now-section {
     content: "";
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.7);
     z-index: 1;
     top: 0;
     right: 0;
@@ -545,6 +546,23 @@ hr.accent-2.mb-4.mt-0.d-inline-block.mx-auto {
     border-radius: 11px;
     margin-top: 20px;
 }
+.apps-link .btn {
+    padding: 4px !important;
+}
+.car-shipping-left p {
+    padding-bottom: 5px;
+}
+.car-shipping-left h2 {
+    font-size: 31px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+
+
+
 
 
 
