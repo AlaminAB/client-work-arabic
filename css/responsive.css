@@ -118,9 +118,10 @@ ul.navbar-nav .nav-item .nav-link {
         order: 3;
         width: 100%;
     }
-    .sidebar-wrapper {
-        top: 48px;
-    }
+.sidebar-wrapper {
+    top: 200px;
+    z-index: 1;
+}
     .wid-btns .btn {
         padding: 5px 8px;
     }
