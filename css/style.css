@@ -836,6 +836,7 @@ section.about-us-cotent-wrap {
 
 .about-us-img img {
   width: 100%;
+      border-radius: 5px;
 }
 
 .about-us-img {
