@@ -568,18 +568,19 @@ hr.accent-2.mb-4.mt-0.d-inline-block.mx-auto {
 
 /* rasel css  */
 
-.sidebar-title .btn, .btn.show-sidebar {
+.sidebar-title .btn,
+.btn.show-sidebar {
     font-size: 20px;
     padding: 2px 12px;
 }
 
 .s-filter-title .btn {
-    padding: 2px 8px;
+    padding: 1px 4px;
     margin: 0;
-    margin-right: 10px;
+    margin-right: 6px;
     position: relative;
     top: -2px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1;
 }
 
@@ -603,11 +604,11 @@ hr.accent-2.mb-4.mt-0.d-inline-block.mx-auto {
     line-height: 25px;
 }
 
-.s-filter-body{
+.s-filter-body {
     display: none;
 }
 
-.open-sf-body{
+.open-sf-body {
     cursor: pointer;
 }
 
@@ -615,15 +616,15 @@ hr.accent-2.mb-4.mt-0.d-inline-block.mx-auto {
     min-width: 300px;
 }
 
-.show-sidebar{
+.show-sidebar {
     display: none;
 }
 
 .sidebar {
-    min-width: 300px;
+    min-width: 250px;
 }
 
-.default-border{
+.default-border {
     border: 1px solid #4d4d4d;
     border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -632,23 +633,23 @@ hr.accent-2.mb-4.mt-0.d-inline-block.mx-auto {
     -o-border-radius: 3px;
 }
 
-.font-18{
+.font-18 {
     font-size: 18px;
 }
 
-.font-22{
+.font-22 {
     font-size: 22px;
 }
 
-.cursor-pointer{
+.cursor-pointer {
     cursor: pointer;
 }
 
-.font-weight-midium{
+.font-weight-midium {
     font-weight: 500;
 }
 
-.singnle-ap-filter{
+.singnle-ap-filter {
     display: -webkit-box;
     display: flex;
     -webkit-box-align: flex-start;
@@ -658,7 +659,7 @@ hr.accent-2.mb-4.mt-0.d-inline-block.mx-auto {
     white-space: nowrap;
 }
 
-.singnle-ap-filter .cls-tag{ 
+.singnle-ap-filter .cls-tag {
     margin-top: -3px;
 }
 
@@ -673,20 +674,21 @@ hr.accent-2.mb-4.mt-0.d-inline-block.mx-auto {
     line-height: 19px;
     padding: 2px 3px;
 }
+
 #dtBasicExample th {
     white-space: nowrap;
     width: auto !important;
 }
 
-.width-20{
+.width-20 {
     width: 20px !important;
 }
 
-.width-100{
+.width-100 {
     width: 100px !important;
 }
 
-.def-sel-inp{
+.def-sel-inp {
     width: 15px;
     height: 15px;
 }
@@ -710,11 +712,11 @@ hr.accent-2.mb-4.mt-0.d-inline-block.mx-auto {
     text-align: center;
 }
 
-.lh-1{
+.lh-1 {
     line-height: 1;
 }
 
-.lh-1-5{
+.lh-1-5 {
     line-height: 1.5;
 }
 
@@ -726,9 +728,33 @@ table.table td {
     font-size: 13px;
 }
 
+.search-table-wrapper {
+    width: 100%;
+}
 
+.sidebar-wrapper {
+    margin-right: 15px;
+}
 
+.font-13 {
+    font-size: 13px;
+}
 
+.s-filter-title p {
+    font-size: 13px;
+}
+
+.s-filter-title .clear-s-filter {
+    font-size: 13px;
+}
+
+.wid-btns .btn {
+    margin-bottom: 3px !important;
+}
+
+.white-s-nowrap{
+    white-space: nowrap;
+}
 
 /* redwan css  */
 /* Banner Section */
@@ -903,9 +929,9 @@ section.about-us-cotent-wrap {
 }
 
 .about-us-img img {
-  width: 100%;
+    width: 100%;
+    border-radius: 5px;
 }
-
 .about-us-img {
   margin-top: 70px;
 }

@@ -1,6 +1,25 @@
 
 /* ***Responsive media query*** */
-
+@media (max-width: 1200px){
+    .sidebar-wrapper {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        z-index: 9;
+    }
+    .sidebar {
+        display: none;
+    }
+    .show-sidebar{
+        display: block;
+        margin-left: 10px;
+        margin-top: 0 !important;
+    }
+    .wid-zip-search input {
+        max-width: 300px;
+        width: 70%;
+    }
+}
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width:1500px){ 
     
